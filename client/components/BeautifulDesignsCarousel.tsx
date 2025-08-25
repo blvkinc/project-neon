@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Button } from '@/components/ui/button'
 
@@ -45,6 +45,13 @@ export default function BeautifulDesignsCarousel() {
     if (!emblaApi) return
     setSelectedIndex(emblaApi.selectedScrollSnap())
   }, [emblaApi])
+
+  useEffect(() => {
+    if (!emblaApi) return
+    onSelect()
+    emblaApi.on('select', onSelect)
+    return () => emblaApi.off('select', onSelect)
+  }, [emblaApi, onSelect])
 
   return (
     <section className="px-6 py-20 bg-gray-50">
