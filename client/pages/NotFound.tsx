@@ -20,14 +20,12 @@ const NotFound = () => {
         <div className="text-center">
           <h1 className="text-6xl font-bold text-black mb-4">404</h1>
           <p className="text-xl text-gray-600 mb-8">Page not found</p>
-          <Button 
+          <Button
             variant="secondary"
             className="bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg px-6 py-2.5 font-medium transition-colors border-0"
             asChild
           >
-            <Link to="/">
-              Return Home
-            </Link>
+            <Link to="/">Return Home</Link>
           </Button>
         </div>
       </div>

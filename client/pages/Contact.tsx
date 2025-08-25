@@ -12,7 +12,7 @@ export default function Contact() {
     company: "",
     projectType: "",
     budget: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -23,10 +23,14 @@ export default function Contact() {
     alert("Thank you for your message! We'll get back to you soon.");
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -35,69 +39,145 @@ export default function Contact() {
       title: "Email",
       value: "hello@designkit.com",
       icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
         </svg>
-      )
+      ),
     },
     {
       title: "Phone",
       value: "+1 (555) 123-4567",
       icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
         </svg>
-      )
+      ),
     },
     {
       title: "Office",
       value: "San Francisco, CA",
       icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+          />
         </svg>
-      )
-    }
+      ),
+    },
   ];
 
   const services = [
     {
       title: "Design Systems",
-      description: "Comprehensive design systems that scale with your organization.",
+      description:
+        "Comprehensive design systems that scale with your organization.",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+          />
         </svg>
-      )
+      ),
     },
     {
       title: "Product Design",
       description: "End-to-end product design from concept to launch.",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
         </svg>
-      )
+      ),
     },
     {
       title: "Brand Identity",
       description: "Complete brand identity and visual design solutions.",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v6a2 2 0 002 2h4a2 2 0 002-2V5z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v6a2 2 0 002 2h4a2 2 0 002-2V5z"
+          />
         </svg>
-      )
+      ),
     },
     {
       title: "Consulting",
       description: "Strategic design consulting and team training.",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+          />
         </svg>
-      )
-    }
+      ),
+    },
   ];
 
   return (
@@ -113,7 +193,8 @@ export default function Contact() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your design process? We'd love to hear about your project and explore how we can help bring your vision to life.
+            Ready to transform your design process? We'd love to hear about your
+            project and explore how we can help bring your vision to life.
           </p>
         </div>
       </section>
@@ -126,11 +207,14 @@ export default function Contact() {
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 sm:mb-8">
                 Start Your Project
               </h2>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="name" className="text-brand-700 font-medium">
+                    <Label
+                      htmlFor="name"
+                      className="text-brand-700 font-medium"
+                    >
                       Full Name *
                     </Label>
                     <Input
@@ -144,9 +228,12 @@ export default function Contact() {
                       placeholder="Your full name"
                     />
                   </div>
-                  
+
                   <div>
-                    <Label htmlFor="email" className="text-brand-700 font-medium">
+                    <Label
+                      htmlFor="email"
+                      className="text-brand-700 font-medium"
+                    >
                       Email Address *
                     </Label>
                     <Input
@@ -161,10 +248,13 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="company" className="text-brand-700 font-medium">
+                    <Label
+                      htmlFor="company"
+                      className="text-brand-700 font-medium"
+                    >
                       Company
                     </Label>
                     <Input
@@ -177,9 +267,12 @@ export default function Contact() {
                       placeholder="Your company name"
                     />
                   </div>
-                  
+
                   <div>
-                    <Label htmlFor="projectType" className="text-brand-700 font-medium">
+                    <Label
+                      htmlFor="projectType"
+                      className="text-brand-700 font-medium"
+                    >
                       Project Type
                     </Label>
                     <select
@@ -198,9 +291,12 @@ export default function Contact() {
                     </select>
                   </div>
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="budget" className="text-brand-700 font-medium">
+                  <Label
+                    htmlFor="budget"
+                    className="text-brand-700 font-medium"
+                  >
                     Project Budget
                   </Label>
                   <select
@@ -217,9 +313,12 @@ export default function Contact() {
                     <option value="100k+">$100,000+</option>
                   </select>
                 </div>
-                
+
                 <div>
-                  <Label htmlFor="message" className="text-brand-700 font-medium">
+                  <Label
+                    htmlFor="message"
+                    className="text-brand-700 font-medium"
+                  >
                     Project Details *
                   </Label>
                   <Textarea
@@ -233,8 +332,8 @@ export default function Contact() {
                     placeholder="Tell us about your project, goals, timeline, and any specific requirements..."
                   />
                 </div>
-                
-                <Button 
+
+                <Button
                   type="submit"
                   size="lg"
                   className="w-full bg-brand-800 hover:bg-brand-900 text-white rounded-lg py-4 text-lg font-medium transition-colors"
@@ -252,7 +351,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold text-foreground mb-6">
                 Get in Touch
               </h3>
-              
+
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center gap-4">
@@ -277,7 +376,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold text-foreground mb-6">
                 Our Services
               </h3>
-              
+
               <div className="space-y-6">
                 {services.map((service, index) => (
                   <div key={index} className="flex gap-4">
@@ -303,13 +402,26 @@ export default function Contact() {
                 Quick Response Guarantee
               </h3>
               <p className="text-brand-600 text-sm leading-relaxed mb-4">
-                We respond to all inquiries within 24 hours. For urgent projects, call us directly for immediate assistance.
+                We respond to all inquiries within 24 hours. For urgent
+                projects, call us directly for immediate assistance.
               </p>
               <div className="flex items-center gap-2 text-brand-800">
-                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-5 h-5 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
-                <span className="text-sm font-medium">Usually within 4 hours</span>
+                <span className="text-sm font-medium">
+                  Usually within 4 hours
+                </span>
               </div>
             </div>
           </div>

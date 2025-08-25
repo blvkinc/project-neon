@@ -23,7 +23,10 @@ export default function Navigation() {
   return (
     <header className="w-full px-4 sm:px-6 py-4 flex items-center justify-between max-w-7xl mx-auto">
       <div className="flex items-center">
-        <Link to="/" className="text-xl sm:text-2xl font-bold text-foreground hover:opacity-80 transition-opacity">
+        <Link
+          to="/"
+          className="text-xl sm:text-2xl font-bold text-foreground hover:opacity-80 transition-opacity"
+        >
           designkit.
         </Link>
       </div>
@@ -50,17 +53,32 @@ export default function Navigation() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
             {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
 
-        <Button 
-          variant="default" 
+        <Button
+          variant="default"
           className="bg-brand-800 hover:bg-brand-900 text-white rounded-lg px-4 sm:px-6 py-2.5 text-sm sm:text-base font-medium transition-colors"
           asChild
         >
