@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import BeautifulDesignsCarousel from "@/components/BeautifulDesignsCarousel";
 
 export default function Index() {
   return (
@@ -90,46 +91,8 @@ export default function Index() {
         </p>
       </section>
 
-      {/* Beautiful Designed section */}
-      <section className="px-6 py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-                Beautiful Designed
-              </h2>
-              <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Each link kit is crafted with care by our team of professional designers. 
-                Show your personality through carefully crafted design elements that make your content stand out.
-              </p>
-            </div>
-            <div className="relative">
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
-                <div className="aspect-[3/4] bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl overflow-hidden relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1061&h=1415&q=80"
-                    alt="Beautiful design example"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
-                    <div className="p-6 text-white">
-                      <h3 className="text-xl font-bold mb-2">Creative Portfolio</h3>
-                      <p className="text-gray-200 text-sm">Showcase your work beautifully</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Dark overlay section */}
-              <div className="absolute top-12 right-12 bg-gray-900 text-white p-6 rounded-2xl max-w-xs">
-                <p className="text-sm leading-relaxed">
-                  "The collaborative features are game-changing. 
-                  Our team's productivity increased by 300% since switching to DesignKit."
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Beautiful Designed Carousel */}
+      <BeautifulDesignsCarousel />
 
       {/* Intuitive designs section */}
       <section className="px-6 py-20">
