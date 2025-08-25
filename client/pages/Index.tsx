@@ -43,7 +43,7 @@ export default function Index() {
         {/* Device Mockup */}
         <div className="w-full max-w-lg mt-16 relative">
           <div className="relative mx-auto" style={{ transform: 'perspective(1000px) rotateX(15deg) rotateY(-15deg)' }}>
-            <div className="bg-black rounded-[3rem] p-2 shadow-2xl">
+            <div className="bg-black rounded-[3rem] p-2 shadow-medium">
               <div className="bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
                 <div className="relative bg-black h-8 rounded-b-2xl mx-auto w-32 mt-2"></div>
                 <div className="p-6 bg-gray-900 text-white h-full">
@@ -126,7 +126,7 @@ export default function Index() {
               }
             ].map((design, index) => (
               <div key={index} className="group cursor-pointer">
-                <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300">
                   <div className="aspect-[3/4] overflow-hidden">
                     <img 
                       src={design.image}
@@ -223,7 +223,7 @@ export default function Index() {
                 answer: "We provide 24/7 customer support through chat, email, and phone, plus comprehensive documentation and video tutorials."
               }
             ].map((faq, index) => (
-              <div key={index} className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+              <div key={index} className="bg-white rounded-2xl border border-gray-100 p-6 shadow-soft">
                 <h3 className="text-lg font-semibold text-black mb-3">{faq.question}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
               </div>
