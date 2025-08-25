@@ -55,49 +55,49 @@ export default function Index() {
               </div>
               
               {/* Dashboard Content */}
-              <div className="p-8 bg-gradient-to-br from-brand-50 to-white min-h-[400px]">
-                <div className="flex items-center justify-between mb-8">
-                  <h2 className="text-2xl font-bold text-brand-900">Dashboard</h2>
+              <div className="p-4 sm:p-8 bg-gradient-to-br from-brand-50 to-white min-h-[300px] sm:min-h-[400px]">
+                <div className="flex items-center justify-between mb-6 sm:mb-8">
+                  <h2 className="text-xl sm:text-2xl font-bold text-brand-900">Dashboard</h2>
                   <div className="flex gap-2">
-                    <div className="w-8 h-8 bg-brand-200 rounded-lg"></div>
-                    <div className="w-8 h-8 bg-brand-300 rounded-lg"></div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-brand-200 rounded-lg"></div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-brand-300 rounded-lg"></div>
                   </div>
                 </div>
                 
                 {/* Stats Cards */}
-                <div className="grid grid-cols-3 gap-6 mb-8">
-                  <div className="bg-white rounded-xl p-6 border border-brand-100 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-800 mb-2">127</div>
-                    <div className="text-brand-600 text-sm">Active Projects</div>
+                <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8">
+                  <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-6 border border-brand-100 shadow-sm">
+                    <div className="text-xl sm:text-3xl font-bold text-brand-800 mb-1 sm:mb-2">127</div>
+                    <div className="text-brand-600 text-xs sm:text-sm">Active Projects</div>
                   </div>
-                  <div className="bg-white rounded-xl p-6 border border-brand-100 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-800 mb-2">24</div>
-                    <div className="text-brand-600 text-sm">Team Members</div>
+                  <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-6 border border-brand-100 shadow-sm">
+                    <div className="text-xl sm:text-3xl font-bold text-brand-800 mb-1 sm:mb-2">24</div>
+                    <div className="text-brand-600 text-xs sm:text-sm">Team Members</div>
                   </div>
-                  <div className="bg-white rounded-xl p-6 border border-brand-100 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-800 mb-2">98%</div>
-                    <div className="text-brand-600 text-sm">Efficiency Rate</div>
+                  <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-6 border border-brand-100 shadow-sm">
+                    <div className="text-xl sm:text-3xl font-bold text-brand-800 mb-1 sm:mb-2">98%</div>
+                    <div className="text-brand-600 text-xs sm:text-sm">Efficiency Rate</div>
                   </div>
                 </div>
                 
                 {/* Project List */}
-                <div className="bg-white rounded-xl border border-brand-100 shadow-sm">
-                  <div className="p-6 border-b border-brand-100">
-                    <h3 className="font-semibold text-brand-900">Recent Projects</h3>
+                <div className="bg-white rounded-lg sm:rounded-xl border border-brand-100 shadow-sm">
+                  <div className="p-4 sm:p-6 border-b border-brand-100">
+                    <h3 className="font-semibold text-brand-900 text-sm sm:text-base">Recent Projects</h3>
                   </div>
-                  <div className="p-6 space-y-4">
+                  <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
                     {[1, 2, 3].map((i) => (
-                      <div key={i} className="flex items-center justify-between py-3">
-                        <div className="flex items-center gap-4">
-                          <div className="w-10 h-10 bg-gradient-to-br from-brand-400 to-brand-600 rounded-lg"></div>
+                      <div key={i} className="flex items-center justify-between py-2 sm:py-3">
+                        <div className="flex items-center gap-3 sm:gap-4">
+                          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-brand-400 to-brand-600 rounded-lg"></div>
                           <div>
-                            <div className="font-medium text-brand-900">Design System v2.{i}</div>
-                            <div className="text-sm text-brand-600">Updated 2 hours ago</div>
+                            <div className="font-medium text-brand-900 text-sm sm:text-base">Design System v2.{i}</div>
+                            <div className="text-xs sm:text-sm text-brand-600">Updated 2 hours ago</div>
                           </div>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <div className="w-6 h-6 bg-brand-100 rounded-full"></div>
-                          <div className="w-6 h-6 bg-brand-200 rounded-full"></div>
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <div className="w-5 h-5 sm:w-6 sm:h-6 bg-brand-100 rounded-full"></div>
+                          <div className="w-5 h-5 sm:w-6 sm:h-6 bg-brand-200 rounded-full"></div>
                         </div>
                       </div>
                     ))}
