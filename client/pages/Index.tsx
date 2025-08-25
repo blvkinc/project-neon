@@ -1,21 +1,10 @@
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation";
 
 export default function Index() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation Header */}
-      <header className="w-full px-4 sm:px-6 py-4 flex items-center justify-between max-w-7xl mx-auto">
-        <div className="flex items-center">
-          <h1 className="text-xl sm:text-2xl font-bold text-foreground">designkit.</h1>
-        </div>
-        <Button
-          variant="default"
-          className="bg-brand-800 hover:bg-brand-900 text-white rounded-lg px-4 sm:px-6 py-2.5 text-sm sm:text-base font-medium transition-colors"
-        >
-          <span className="hidden sm:inline">Get Started Today</span>
-          <span className="sm:hidden">Get Started</span>
-        </Button>
-      </header>
+      <Navigation />
 
       {/* Hero Section */}
       <main className="flex flex-col items-center justify-center px-4 sm:px-6 pt-8 sm:pt-16 pb-8 max-w-7xl mx-auto">
