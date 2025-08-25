@@ -75,7 +75,7 @@ export default function BeautifulDesignsCarousel() {
                         variant="outline"
                         size="sm"
                         onClick={scrollPrev}
-                        className="rounded-full w-10 h-10 p-0 border-gray-300 hover:bg-gray-100"
+                        className="rounded-full w-10 h-10 p-0 border-gray-200 hover:bg-gray-50 shadow-soft"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -98,7 +98,7 @@ export default function BeautifulDesignsCarousel() {
                         variant="outline"
                         size="sm"
                         onClick={scrollNext}
-                        className="rounded-full w-10 h-10 p-0 border-gray-300 hover:bg-gray-100"
+                        className="rounded-full w-10 h-10 p-0 border-gray-200 hover:bg-gray-50 shadow-soft"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -108,7 +108,7 @@ export default function BeautifulDesignsCarousel() {
                   </div>
                   
                   <div className="relative">
-                    <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div className="bg-white rounded-3xl p-8 shadow-medium border border-gray-100">
                       <div className="aspect-[3/4] bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl overflow-hidden relative">
                         <img 
                           src={slide.image}
@@ -125,7 +125,7 @@ export default function BeautifulDesignsCarousel() {
                     </div>
                     
                     {/* Testimonial overlay */}
-                    <div className="absolute top-12 right-12 bg-gray-900 text-white p-6 rounded-2xl max-w-xs shadow-xl">
+                    <div className="absolute top-12 right-12 bg-gray-900 text-white p-6 rounded-2xl max-w-xs shadow-medium">
                       <p className="text-sm leading-relaxed">
                         "{slide.testimonial}"
                       </p>
