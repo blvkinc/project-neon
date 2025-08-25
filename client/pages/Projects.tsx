@@ -1,4 +1,4 @@
-import Navigation from "@/components/Navigation";
+import MinimalHeader from "@/components/MinimalHeader";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -63,18 +63,18 @@ export default function Projects() {
   const categories = ["All", "Design System", "SaaS Platform", "Mobile App", "Brand Identity", "Data Visualization", "E-commerce"];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="min-h-screen bg-white">
+      <MinimalHeader />
 
       {/* Hero Section */}
       <section className="px-4 sm:px-6 pt-8 sm:pt-16 pb-12 sm:pb-20 max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6 sm:mb-8">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight mb-6 sm:mb-8">
             Projects that drive
             <span className="block">real results.</span>
           </h1>
-          
-          <p className="text-lg sm:text-xl md:text-2xl text-brand-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
+
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
             Explore our portfolio of successful design projects that have transformed businesses and delighted users across industries.
           </p>
 
